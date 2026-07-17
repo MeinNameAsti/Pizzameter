@@ -1,10 +1,220 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background-color: #f3eadc;
+  padding: 0;
+  font-family: "Arial", sans-serif;
 }
 
-h1 {
-  font-size: 2.5rem;
+body {
+  background: #fff7ed;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 25px;
+  background: #ffffff;
+}
+
+header h1 {
+  font-size: 42px;
+  color: #d35400;
+  letter-spacing: 2px;
+}
+
+header p {
+  margin-top: 10px;
+  color: #777;
+}
+
+/* Layout */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* Karten */
+
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 25px;
+}
+
+/* Eingaben */
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.counter button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background: #f39c12;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#persons {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+.option {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.option.active {
+  background: #f39c12;
+  color: white;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.checkboxes label {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.calculate {
+  margin-top: 25px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  background: #d35400;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.calculate:hover {
+  background: #b84300;
+}
+
+/* Ergebnis */
+
+.result {
+  text-align: center;
+}
+
+.result h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.stats div {
+  background: #fff3e0;
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.stats span {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+  color: #d35400;
+}
+
+.stats small {
+  color: #777;
+}
+
+.pizza-analysis {
+  margin-top: 35px;
+}
+
+.pizza-analysis p {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#progress {
+  height: 100%;
+  width: 60%;
+  background: #f39c12;
+}
+
+.tip {
+  background: #fff3e0;
+  padding: 20px;
+  margin-top: 35px;
+  border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
 }

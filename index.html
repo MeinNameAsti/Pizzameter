@@ -7,7 +7,80 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>🍕 Pizzameter</h1>
+    <header>
+      <h1>🍕 PIZZAMETER</h1>
+      <p>Nicht schon wieder Pizza!</p>
+    </header>
+    <main>
+      <div class="container">
+        <section class="card input-card">
+          <h2>📝 Deine Angaben</h2>
+          <label>👥 Anzahl Personen: </label>
+          <div class="counter">
+            <button id="minus">−</button>
+            <span id="persons">2</span>
+            <button id="plus">+</button>
+          </div>
+          <label>🍴 Hungerlevel: </label>
+          <div class="options">
+            <button class="option active">🍕 Wenig</button>
+            <button class="option">😋 Normal</button>
+            <button class="option">🔥 Viel</button>
+          </div>
+          <label>📏 Pizza-Größe: </label>
+          <select id="size">
+            <option value="26">Klein (ca. 26 cm)</option>
+            <option value="30" selected>Normal (ca. 30 cm)</option>
+            <option value="36">Groß (ca. 36 cm)</option>
+          </select>
+          <label>⚙️ Weitere Optionen (optional): </label>
+          <div class="checkboxes">
+            <label>
+              <input type="checkbox" value="1" />
+              Vegetarier berücksichtigen
+            </label>
+            <label>
+              <input type="checkbox" value="1" />
+              Kinder dabei
+            </label>
+          </div>
+          <button class="calculate" id="calculate">🍕 Berechnen</button>
+        </section>
+        <section class="card result-card">
+          <h2>🏆 Ergebnis</h2>
+          <div class="result">
+            <h3 id="pizzaResult">Empfohlene Anzahl an Pizzen: 3</h3>
+            <div class="stats">
+              <div>
+                <span id="piecesTotal">24</span>
+                <small>Stücke gesamt</small>
+              </div>
+              <div>
+                <span id="piecesPerPerson">4</span>
+                <small>Stücke pro Person</small>
+              </div>
+              <div>
+                <span id="piecesLeft">2</span>
+                <small>Vorraussichtlicher Rest</small>
+              </div>
+            </div>
+            <div class="pizza-analysis">
+              <p>📊 Pizza-Analyse</p>
+              <div class="bar">
+                <div id="progress"></div>
+              </div>
+            </div>
+            <div class="tip">
+              💡 Tipp: Lieber etwas mehr Pizza einplanen. Reste schmecken am
+              nächsten Tag auch!
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div>This is the content of my footer</div>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
