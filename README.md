@@ -17,9 +17,8 @@ Javascript, HTML, CSS
 ## ✔️ ToDo´s
 
 - ~~erstes grobes Grundgerüst erstellen~~
-- Header fertigstellen
-  > Logo, Name und Slogan nach links
-  > rechts Pizzasymbol einfügen
+- ~~Header fertigstellen~~
+  > ~~Logo, Name und Slogan nach links, rechts Pizzasymbol einfügen~~
 - Footer fertigstellen
 - Berechnung der Pizzastücke hinzufügen anhand der Personenanzahl, Hungerlevel und Pizzagröße
 - weitere Optionen hinzufügen und für die Berechnung berücksichtigen
