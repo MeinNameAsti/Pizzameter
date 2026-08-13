@@ -12,20 +12,39 @@ body {
 /* Header */
 
 header {
-  text-align: center;
-  padding: 25px;
+  display: grid;
+  align-items: center;
+  padding: 5px;
   background: #ffffff;
+  grid-template-columns: max-content 25em auto 15em max-content;
 }
 
 header h1 {
-  font-size: 42px;
-  color: #d35400;
-  letter-spacing: 2px;
+  grid-column: 2;
+  font-size: 40px;
+  color: #08031b;
+  letter-spacing: 1px;
 }
 
 header p {
-  margin-top: 10px;
-  color: #777;
+  grid-column: 2;
+  color: #d35400;
+  font-weight: bold;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+}
+
+#img_logo {
+  grid-column: 1;
+  padding: 5px;
+}
+
+#img_pizza {
+  grid-column: 5;
+  padding: 5px;
 }
 
 /* Layout */
