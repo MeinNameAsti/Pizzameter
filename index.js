@@ -24,7 +24,7 @@ function updatePersons() {
   personsText.textContent = persons;
 }
 
-// Hunger Buttons:
+// Hungerlevel:
 
 const options = document.querySelectorAll(".option");
 
@@ -40,4 +40,49 @@ options.forEach((button) => {
 
 const calculate = document.getElementById("calculate");
 
-calculate.addEventListener("click", () => {});
+calculate.addEventListener("click", () => {
+  //window.alert("Test Button berechnen");
+  pizzenBerechnen();
+});
+
+function pizzenBerechnen() {
+  const hungerlevel = document.querySelector(".option.active").dataset.hunger;
+  const pizzagroesse = Number(document.getElementById("size").value);
+
+  const ergebnis = berechnePizzen(persons, hungerlevel, pizzagroesse);
+
+  console.log(ergebnis);
+}
+
+function berechnePizzen(personen, hungerlevel, pizzagroesse) {
+  const stueckeProPerson = {
+    wenig: {
+      26: 7,
+      30: 6,
+      36: 5,
+    },
+    normal: {
+      26: 8,
+      30: 7,
+      36: 6,
+    },
+    viel: {
+      26: 9,
+      30: 8,
+      36: 7,
+    },
+  };
+
+  const stueckePerson = stueckeProPerson[hungerlevel][pizzagroesse];
+
+  const benoetigteStuecke = personen * stueckePerson;
+  const anzahlPizzen = Math.ceil(benoetigteStuecke / 8);
+  const uebrigeStuecke = anzahlPizzen * 8 - benoetigteStuecke;
+
+  return {
+    pizzen: anzahlPizzen,
+    benoetigteStuecke: benoetigteStuecke,
+    uebrigeStuecke: uebrigeStuecke,
+  };
+  console.log("Ergebnis:", ergebnis);
+}

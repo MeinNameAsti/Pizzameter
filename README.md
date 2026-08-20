@@ -20,7 +20,8 @@ Javascript, HTML, CSS
 - ~~Header fertigstellen~~
   > ~~Logo, Name und Slogan nach links, rechts Pizzasymbol einfügen~~
 - Footer fertigstellen
-- Berechnung der Pizzastücke hinzufügen anhand der Personenanzahl, Hungerlevel und Pizzagröße
+- ~~Berechnung der Pizzastücke hinzufügen anhand der Personenanzahl, Hungerlevel und Pizzagröße~~
+- Ergebnis der Berechnung anzeigen lassen
 - weitere Optionen hinzufügen und für die Berechnung berücksichtigen
   > Vegan, Vegetarisch, kinder dabei, kein Schwein
 - Pizza-Analyse hinzufügen

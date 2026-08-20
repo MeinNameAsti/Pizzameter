@@ -35,9 +35,9 @@
           </div>
           <label>🍴 Hungerlevel: </label>
           <div class="options">
-            <button class="option active">🍕 Wenig</button>
-            <button class="option">😋 Normal</button>
-            <button class="option">🔥 Viel</button>
+            <button class="option active" data-hunger="wenig">🍕 Wenig</button>
+            <button class="option" data-hunger="normal">😋 Normal</button>
+            <button class="option" data-hunger="viel">🔥 Viel</button>
           </div>
           <label>📏 Pizza-Größe: </label>
           <select id="size">
@@ -66,18 +66,18 @@
               alt="pictures of a sliced pizza"
               id="img_pizza_result"
             />
-            <h3 id="pizzaResult">Empfohlene Anzahl an Pizzen: 3</h3>
+            <h3 id="pizzaResult">Empfohlene Anzahl an Pizzen: 2</h3>
             <div class="stats">
               <div>
-                <span id="piecesTotal">24</span>
+                <span id="piecesTotal">16</span>
                 <small>Stücke gesamt</small>
               </div>
               <div>
-                <span id="piecesPerPerson">4</span>
+                <span id="piecesPerPerson">6</span>
                 <small>Stücke pro Person</small>
               </div>
               <div>
-                <span id="piecesLeft">2</span>
+                <span id="piecesLeft">4</span>
                 <small>Vorraussichtlicher Rest</small>
               </div>
             </div>
