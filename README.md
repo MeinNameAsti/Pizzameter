@@ -12,14 +12,14 @@ Javascript, HTML, CSS
 
 ## 🕑 Current status
 
-<img src="img/current_status.png" alt="screenshot" width="800" height="450">
+<img src="img/current_status.png" alt="screenshot" width="700" height="480">
 
 ## ✔️ ToDo´s
 
 - ~~erstes grobes Grundgerüst erstellen~~
 - ~~Header fertigstellen~~
   > ~~Logo, Name und Slogan nach links, rechts Pizzasymbol einfügen~~
-- Footer fertigstellen
+- ~~Footer fertigstellen~~
 - ~~Berechnung der Pizzastücke hinzufügen anhand der Personenanzahl, Hungerlevel und Pizzagröße~~
 - Ergebnis der Berechnung anzeigen lassen
 - weitere Optionen hinzufügen und für die Berechnung berücksichtigen
@@ -32,6 +32,7 @@ Javascript, HTML, CSS
   > zum Beispiel 7 Tipps, die täglich wechseln
   > z. B wie man eine Pizza am nächsten Tag perfekt erwärmt
 - Icon im Tab anzeigen
+- @media Abfragen in CSS für footer richtig anpassen
 - Aussehen der Seite verschönern
 - Tests hinzufügen
 - Dokumentation schreiben
