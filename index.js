@@ -41,7 +41,6 @@ options.forEach((button) => {
 const calculate = document.getElementById("calculate");
 
 calculate.addEventListener("click", () => {
-  //window.alert("Test Button berechnen");
   pizzenBerechnen();
 });
 
@@ -52,6 +51,14 @@ function pizzenBerechnen() {
   const ergebnis = berechnePizzen(persons, hungerlevel, pizzagroesse);
 
   console.log(ergebnis);
+
+  document.getElementById("pizzaResult").textContent =
+    `Empfohlene Anzahl an Pizzan: ${ergebnis.pizzen}`;
+  document.getElementById("piecesTotal").textContent =
+    ergebnis.benoetigteStuecke;
+  document.getElementById("piecesLeft").textContent = ergebnis.uebrigeStuecke;
+  document.getElementById("piecesPerPerson").textContent =
+    ergebnis.stueckeProPerson;
 }
 
 function berechnePizzen(personen, hungerlevel, pizzagroesse) {
@@ -83,6 +90,6 @@ function berechnePizzen(personen, hungerlevel, pizzagroesse) {
     pizzen: anzahlPizzen,
     benoetigteStuecke: benoetigteStuecke,
     uebrigeStuecke: uebrigeStuecke,
+    stueckeProPerson: stueckePerson,
   };
-  console.log("Ergebnis:", ergebnis);
 }
