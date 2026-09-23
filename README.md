@@ -17,6 +17,7 @@ Javascript, HTML, CSS
 ## ✔️ ToDo´s
 
 - ~~erstes grobes Grundgerüst erstellen~~
+- ~~Icon im Tab anzeigen~~
 - ~~Header fertigstellen~~
   > ~~Logo, Name und Slogan nach links, rechts Pizzasymbol einfügen~~
 - ~~Footer fertigstellen~~
@@ -26,15 +27,13 @@ Javascript, HTML, CSS
   > Vegan, Vegetarisch, kinder dabei, kein Schwein
 - Pizza-Analyse hinzufügen
   > Wahrscheinlichkeit für resthunger, Sättigungslevel, Streitpotential
-- Fehlermeldung bei ungültiger Eingabe
-  > Fehlende Eingabe, Anzahl im dreistelligen Bereich (Nochmal fragen ob das so gewünscht ist)
 - beim Tipp immer wechselne Tipps anzeigen lassen
   > zum Beispiel 7 Tipps, die täglich wechseln
   > z. B wie man eine Pizza am nächsten Tag perfekt erwärmt
-- Icon im Tab anzeigen
 - @media Abfragen in CSS für footer richtig anpassen
 - Aussehen der Seite verschönern
-- Tests hinzufügen
+- Unit-tests hinzufügen mit Vitest
+- E2E tests hinzufügen mit Playwright
 - Dokumentation schreiben
 
 ## 📃 License
