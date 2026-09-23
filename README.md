@@ -26,6 +26,7 @@ Javascript, HTML, CSS
 - ~~beim Tipp immer wechselne Tipps anzeigen lassen~~
   > ~~zum Beispiel 7 Tipps, die täglich wechseln~~
   > ~~z. B wie man eine Pizza am nächsten Tag perfekt erwärmt~~
+- ~~Ergebnis rechts neben dem Pizzasymbol (statt darunter) anzeigen lassen~~
 - weitere Optionen hinzufügen und für die Berechnung berücksichtigen
   > Vegan, Vegetarisch, kinder dabei, kein Schwein
 - Pizza-Analyse hinzufügen
@@ -33,8 +34,7 @@ Javascript, HTML, CSS
   > Wahrscheinlichkeit für resthunger, Sättigungslevel, Streitpotential
 
 - @media Abfragen in CSS für footer richtig anpassen
-- Ergebnis rechts neben dem Pizzasymbol (statt darunter) anzeigen lassen
-- Aussehen der Seite verschönern
+
 - Unit-tests hinzufügen mit Vitest
 - E2E tests hinzufügen mit Playwright
 - Dokumentation schreiben

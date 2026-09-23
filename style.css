@@ -184,8 +184,14 @@ select {
   height: auto;
 }
 .result h3 {
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 22px;
+  margin: 22px 0 0 15px;
+}
+
+.result-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
 }
 
 .stats {

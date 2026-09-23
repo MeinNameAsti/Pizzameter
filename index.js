@@ -53,7 +53,7 @@ function pizzenBerechnen() {
   console.log(ergebnis);
 
   document.getElementById("pizzaResult").textContent =
-    `Empfohlene Anzahl an Pizzen: ${ergebnis.pizzen}`;
+    `Empfohlene Anzahl Pizzen: ${ergebnis.pizzen}`;
   document.getElementById("piecesTotal").textContent =
     ergebnis.benoetigteStuecke;
   document.getElementById("piecesLeft").textContent = ergebnis.uebrigeStuecke;
