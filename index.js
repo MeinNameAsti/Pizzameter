@@ -53,7 +53,7 @@ function pizzenBerechnen() {
   console.log(ergebnis);
 
   document.getElementById("pizzaResult").textContent =
-    `Empfohlene Anzahl an Pizzan: ${ergebnis.pizzen}`;
+    `Empfohlene Anzahl an Pizzen: ${ergebnis.pizzen}`;
   document.getElementById("piecesTotal").textContent =
     ergebnis.benoetigteStuecke;
   document.getElementById("piecesLeft").textContent = ergebnis.uebrigeStuecke;
@@ -92,4 +92,30 @@ function berechnePizzen(personen, hungerlevel, pizzagroesse) {
     uebrigeStuecke: uebrigeStuecke,
     stueckeProPerson: stueckePerson,
   };
+}
+
+// Tipps anzeigen:
+
+calculate.addEventListener("click", () => {
+  displayRandomTip();
+});
+
+function displayRandomTip() {
+  const tips = [
+    "💡 Tipp: Lieber etwas mehr Pizza einplanen. Reste schmecken am nächsten Tag auch!",
+    "💡 Tipp: Lieber etwas mehr Pizza einplanen. Reste schmecken sowohl kalt als warm!",
+    "💡 Tipp: Pizza für später? Klingt eher nach einem Bonus als nach einem Problem!",
+    "💡 Tipp: Pizza vom Vortag lässt sich im Ofen mit einer kleinen Schale Wasser wieder schön knusprig aufwärmen!",
+    "💡 Tipp: Keine Mikrowelle zum erwärmen? In der Pfanne wird der Boden wieder schön knusprig!",
+    "💡 Tipp: Ein paar Tropfen Wasser auf den Pizzarand geben bevor du sie aufwärmst, so wird er weniger trocken!",
+    "💡 Tipp: Übrig gebliebene Pizza am besten luftdicht im Kühlschrank aufbewahren!",
+    "💡 Tipp: Der Belag macht einen Unterschied, eine sehr reichhaltig belegte Pizza kann deutlich sättigender sein!",
+    "💡 Tipp: Pizza mit dünnem Boden und Pizza mit dickem Boden sind mengenmäßig nicht wirklich vergleichbar!",
+    "💡 Tipp: Pizza schneiden, solange sie noch heiß ist. Das geht meistens leichter!",
+    "💡 Tipp: Ist der Pizzaboden zu weich? Kurz auf einem heißen Blech oder Rost nachbacken!",
+  ];
+
+  const randomIndex = Math.floor(Math.random() * tips.length);
+
+  document.querySelector(".tip").textContent = tips[randomIndex];
 }

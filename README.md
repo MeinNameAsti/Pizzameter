@@ -23,14 +23,17 @@ Javascript, HTML, CSS
 - ~~Footer fertigstellen~~
 - ~~Berechnung der Pizzastücke hinzufügen anhand der Personenanzahl, Hungerlevel und Pizzagröße~~
 - ~~Ergebnis der Berechnung anzeigen lassen~~
+- ~~beim Tipp immer wechselne Tipps anzeigen lassen~~
+  > ~~zum Beispiel 7 Tipps, die täglich wechseln~~
+  > ~~z. B wie man eine Pizza am nächsten Tag perfekt erwärmt~~
 - weitere Optionen hinzufügen und für die Berechnung berücksichtigen
   > Vegan, Vegetarisch, kinder dabei, kein Schwein
 - Pizza-Analyse hinzufügen
+
   > Wahrscheinlichkeit für resthunger, Sättigungslevel, Streitpotential
-- beim Tipp immer wechselne Tipps anzeigen lassen
-  > zum Beispiel 7 Tipps, die täglich wechseln
-  > z. B wie man eine Pizza am nächsten Tag perfekt erwärmt
+
 - @media Abfragen in CSS für footer richtig anpassen
+- Ergebnis rechts neben dem Pizzasymbol (statt darunter) anzeigen lassen
 - Aussehen der Seite verschönern
 - Unit-tests hinzufügen mit Vitest
 - E2E tests hinzufügen mit Playwright
