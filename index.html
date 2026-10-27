@@ -52,13 +52,31 @@
           </select>
           <label>⚙️ Weitere Optionen (optional): </label>
           <div class="checkboxes">
-            <label>
-              <input type="checkbox" value="1" />
-              Vegetarier berücksichtigen
+            Vegetarier berücksichtigen?
+            <label for="vegetarians_included">
+              Anzahl:
+              <input
+                id="vegetarians_included"
+                type="number"
+                step="1"
+                value="1"
+                inputmode="decimal"
+                style="width: 50px"
+              />
+              Personen
             </label>
-            <label>
-              <input type="checkbox" value="1" />
-              Kinder dabei
+            Kinder dabei?
+            <label for="children_included">
+              Anzahl:
+              <input
+                id="children_included"
+                type="number"
+                step="1"
+                value="1"
+                inputmode="decimal"
+                style="width: 50px"
+              />
+              Kinder
             </label>
           </div>
           <button class="calculate" id="calculate">
