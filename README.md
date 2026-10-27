@@ -27,14 +27,18 @@ Javascript, HTML, CSS
   > ~~zum Beispiel 7 Tipps, die täglich wechseln~~
   > ~~z. B wie man eine Pizza am nächsten Tag perfekt erwärmt~~
 - ~~Ergebnis rechts neben dem Pizzasymbol (statt darunter) anzeigen lassen~~
-- weitere Optionen hinzufügen und für die Berechnung berücksichtigen
-  > Vegan, Vegetarisch, kinder dabei, kein Schwein
-- Pizza-Analyse hinzufügen
+- Weitere Optionen hinzufügen und für die Berechnung berücksichtigen
+  > Vegetarisch? kinder dabei?
+- Kostenrechner hinzufügen
 
-  > Wahrscheinlichkeit für resthunger, Sättigungslevel, Streitpotential
+  > Eingabefelder hinzufügen für "Preis pro Pizza", "Liefergebühren" und "Trinkgeld"
 
-- @media Abfragen in CSS für footer richtig anpassen
+  > Ausgabefeld mit Preis pro Person
 
+- @media Abfragen in CSS (für Responsives Design) verbessern
+- Eingaben validieren und Fehler abfangen (Gültige Wertebereiche für Eingabefelder festlegen)
+- Zurücksetzen-funktion hinzufügen
+  > Ein Button der den Wert aller Felder auf den Standardwert zurücksetzt
 - Unit-tests hinzufügen mit Vitest
 - E2E tests hinzufügen mit Playwright
 - Dokumentation schreiben
