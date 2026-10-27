@@ -12,7 +12,7 @@ Javascript, HTML, CSS
 
 ## 🕑 Current status
 
-<img src="img/current_status.png" alt="screenshot" width="700" height="480">
+<img src="img/current_status.png" alt="screenshot" width="989" height="610">
 
 ## ✔️ ToDo´s
 
